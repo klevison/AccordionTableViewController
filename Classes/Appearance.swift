@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class Appearence: NSObject {
+final class Appearance: NSObject {
     
     var headerHeight = CGFloat(50)
     var headerFont = UIFont.systemFontOfSize(15)

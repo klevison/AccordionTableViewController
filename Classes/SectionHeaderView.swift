@@ -24,7 +24,7 @@ class SectionHeaderView: UITableViewHeaderFooterView {
     
     var delegate: SectionHeaderViewDelegate?
     var section: NSInteger?
-    var headerSectionAppearence: Appearence? {
+    var headerSectionAppearence: Appearance? {
         didSet {
             headerSeparatorView.backgroundColor = headerSectionAppearence!.headerSeparatorColor
             backgroundHeaderView.backgroundColor = headerSectionAppearence!.headerColor

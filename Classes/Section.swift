@@ -17,7 +17,7 @@ final class Section: NSObject {
     var title: String?
     var backgroundColor: UIColor?
     var sectionIndex: Int?
-    var appearence = Appearence()
+    var appearance = Appearance()
 
     
     override init() {}

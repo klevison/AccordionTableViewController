@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE000C701B4AEFFC00B1D191 /* AccordionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE000C6B1B4AEFFC00B1D191 /* AccordionTableViewController.swift */; };
-		BE000C711B4AEFFC00B1D191 /* Appearence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE000C6C1B4AEFFC00B1D191 /* Appearence.swift */; };
+		BE000C711B4AEFFC00B1D191 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE000C6C1B4AEFFC00B1D191 /* Appearance.swift */; };
 		BE000C721B4AEFFC00B1D191 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE000C6D1B4AEFFC00B1D191 /* Section.swift */; };
 		BE000C731B4AEFFC00B1D191 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE000C6E1B4AEFFC00B1D191 /* SectionHeaderView.swift */; };
 		BE000C741B4AEFFC00B1D191 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE000C6F1B4AEFFC00B1D191 /* SectionHeaderView.xib */; };
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		BE000C6B1B4AEFFC00B1D191 /* AccordionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionTableViewController.swift; sourceTree = "<group>"; };
-		BE000C6C1B4AEFFC00B1D191 /* Appearence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearence.swift; sourceTree = "<group>"; };
+		BE000C6C1B4AEFFC00B1D191 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		BE000C6D1B4AEFFC00B1D191 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		BE000C6E1B4AEFFC00B1D191 /* SectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		BE000C6F1B4AEFFC00B1D191 /* SectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				BE000C6B1B4AEFFC00B1D191 /* AccordionTableViewController.swift */,
-				BE000C6C1B4AEFFC00B1D191 /* Appearence.swift */,
+				BE000C6C1B4AEFFC00B1D191 /* Appearance.swift */,
 				BE000C6D1B4AEFFC00B1D191 /* Section.swift */,
 				BE000C6E1B4AEFFC00B1D191 /* SectionHeaderView.swift */,
 				BE000C6F1B4AEFFC00B1D191 /* SectionHeaderView.xib */,
@@ -275,7 +275,7 @@
 				BE0A05441B4465D8002C6BF9 /* ViewController.swift in Sources */,
 				BE000C701B4AEFFC00B1D191 /* AccordionTableViewController.swift in Sources */,
 				BE0A05421B4465D8002C6BF9 /* AppDelegate.swift in Sources */,
-				BE000C711B4AEFFC00B1D191 /* Appearence.swift in Sources */,
+				BE000C711B4AEFFC00B1D191 /* Appearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -173,7 +173,7 @@ extension AccordionTableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return sections[section].appearence.headerHeight ?? 0
+        return sections[section].appearance.headerHeight ?? 0
     }
     
     override func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -188,7 +188,7 @@ extension AccordionTableViewController {
             
         currentSection.sectionIndex = section
         currentSection.headerView = sectionHeaderView
-        sectionHeaderView.headerSectionAppearence = currentSection.appearence
+        sectionHeaderView.headerSectionAppearence = currentSection.appearance
         sectionHeaderView.titleLabel.text = currentSection.title
         sectionHeaderView.section = section
         sectionHeaderView.delegate = self
@@ -196,7 +196,7 @@ extension AccordionTableViewController {
         
         
         //TODO: refact it
-        currentSection.appearence.headerColor = currentSection.backgroundColor ?? currentSection.appearence.headerColor
+        currentSection.appearance.headerColor = currentSection.backgroundColor ?? currentSection.appearance.headerColor
         
         if let overlayView = currentSection.overlayView {
             sectionHeaderView.addOverHeaderSubView(overlayView)

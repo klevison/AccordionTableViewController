@@ -21,7 +21,7 @@ Version: 0.2
 
 ## How to install it?
 
-[CocoaPods](http://cocoapods.org) is the easiest way to install KMAccordionTableViewController. Run ```pod search AccordionTableViewController``` to search for the latest version. Then, copy and paste the ```pod``` line to your ```Podfile```. Your podfile should look like:
+[CocoaPods](http://cocoapods.org) is the easiest way to install AccordionTableViewController. Run ```pod search AccordionTableViewController``` to search for the latest version. Then, copy and paste the ```pod``` line to your ```Podfile```. Your podfile should look like:
 
 ```
 platform :ios, '9.0'
@@ -64,7 +64,7 @@ class ViewController: AccordionTableViewController {
 
 ### Customization
 
-Each section has an `appearence` var
+Each section has an `appearence` var and it can be customized
 
 ```swift
 var open = false
@@ -86,4 +86,4 @@ If you have any questions comments or suggestions, send me a message. If you fin
 
 ## Copyright and license
 
-Copyright (c) 2014 Klevison Matias (http://twitter.com/klevison). Code released under [the MIT license](LICENSE).
+Copyright (c) 2015 Klevison Matias (http://twitter.com/klevison). Code released under [the MIT license](LICENSE).

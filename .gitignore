@@ -31,3 +31,19 @@ DerivedData
 # Carthage/Checkouts
 
 Carthage/Build
+
+Example/.idea/.name
+
+Example/.idea/encodings.xml
+
+Example/.idea/Example.iml
+
+Example/.idea/modules.xml
+
+Example/.idea/scopes/scope_settings.xml
+
+Example/.idea/vcs.xml
+
+Example/.idea/workspace.xml
+
+Example/.idea/xcode.xml

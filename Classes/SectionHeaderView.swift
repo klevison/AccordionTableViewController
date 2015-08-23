@@ -14,7 +14,7 @@ protocol SectionHeaderViewDelegate {
     
 }
 
-class SectionHeaderView: UITableViewHeaderFooterView {
+@objc final class SectionHeaderView: UITableViewHeaderFooterView {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var disclosureButton: UIButton!

@@ -19,5 +19,5 @@ final class Appearance: NSObject {
     var headerArrowImageClosed = UIImage(named: "carat")
     
     override init() {}
-   
+    
 }

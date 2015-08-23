@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "AccordionTableViewController"
-  s.version          = "0.2"
+  s.version          = "0.0.1"
   s.summary          = "Accordion UITableViewController"
   s.description      = <<-DESC
                        Swift version of https://github.com/klevison/KMAccordionTableViewController
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '9.0'
   s.requires_arc     = true
 
-  s.source_files     = "Classes", "Classes/**/*.{h,m}"
+  s.source_files     = "Classes", "Classes/**/*.{swift}"
   s.resource_bundles = {
     'AccordionTableViewController' => ['Classes/**/*.{xib,png,nib}']
   }

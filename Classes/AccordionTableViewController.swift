@@ -19,7 +19,7 @@ class AccordionTableViewController: UITableViewController {
     
     private var openAnimation = UITableViewRowAnimation.Fade
     private var closeAnimation = UITableViewRowAnimation.Fade
-    var openedSectionIndex: Int!
+    var openedSectionIndex = NSNotFound
     var sections = [Section]()
     var oneSectionAlwaysOpen = false
     var delegate: AccordionTableViewControllerDelegate?
@@ -27,14 +27,6 @@ class AccordionTableViewController: UITableViewController {
     private let SectionHeaderViewIdentifier = "SectionHeaderViewIdentifier"
     private let SectionCellID = "CellIdentifier"
     
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-        
-    private func setup() {
-        openedSectionIndex = NSNotFound
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -185,7 +177,11 @@ extension AccordionTableViewController {
         let sectionHeaderView = tableView.dequeueReusableHeaderFooterViewWithIdentifier(SectionHeaderViewIdentifier) as! SectionHeaderView
         
         let currentSection = sections[section]
-            
+        
+        if currentSection.backgroundColor != nil {
+            currentSection.appearance.headerColor = currentSection.backgroundColor!
+        }
+        
         currentSection.sectionIndex = section
         currentSection.headerView = sectionHeaderView
         sectionHeaderView.headerSectionAppearence = currentSection.appearance
@@ -194,9 +190,7 @@ extension AccordionTableViewController {
         sectionHeaderView.delegate = self
         sectionHeaderView.disclosureButton.selected = currentSection.open
         
-        
         //TODO: refact it
-        currentSection.appearance.headerColor = currentSection.backgroundColor ?? currentSection.appearance.headerColor
         
         if let overlayView = currentSection.overlayView {
             sectionHeaderView.addOverHeaderSubView(overlayView)

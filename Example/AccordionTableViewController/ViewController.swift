@@ -46,7 +46,8 @@ class ViewController: AccordionTableViewController {
         let section = Section()
         section.view = viewOfSection
         section.title = "Facebook"
-        section.backgroundColor = UIColor.grayColor() // individual background color for a specific section, overrides the general color if set
+        section.backgroundColor = UIColor.redColor() // individual background color for a specific section, overrides the general color if set
+        section.appearance.headerHeight = 100
         
         let overlayViewSection = UIImageView(frame: CGRectMake(0, 0, 50, 49))
         overlayViewSection.backgroundColor = UIColor.whiteColor()
@@ -95,7 +96,7 @@ class ViewController: AccordionTableViewController {
         let section = Section()
         section.view = sectionViewController.view
         section.title = "ViewController"
-        section.backgroundColor = UIColor.blueColor() // individual background color for a specific section, overrides the general color if set
+        section.backgroundColor = UIColor.orangeColor() // individual background color for a specific section, overrides the general color if set
         
         return section
     }

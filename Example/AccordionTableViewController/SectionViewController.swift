@@ -14,7 +14,7 @@ protocol SectionViewControllerDelegate {
 
 }
 
-class SectionViewController: UIViewController {
+final class SectionViewController: UIViewController {
     
     var delegate: SectionViewControllerDelegate?
 

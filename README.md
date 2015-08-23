@@ -8,7 +8,7 @@ Swift version of https://github.com/klevison/KMAccordionTableViewController
 
 ## Current Version
 
-Version: 0.2
+Version: 0.0.1
 
 ## Under the Hood
 

@@ -8,29 +8,26 @@ Swift version of https://github.com/klevison/KMAccordionTableViewController
 
 ## Current Version
 
-Version: 0.0.1
+Version: 0.0.2
 
 ## Under the Hood
 
-* iOS9 compatible
-* Swift 2.0
-* Xcode 7.0
 * Supports UIViews as sections (UIViews, UIViewController's view, UITableViews, UIWebView, MKMapView, etc...)
 * Update content and size of a section
 * Custom animation
 
 ## How to install it?
 
-[CocoaPods](http://cocoapods.org) is the easiest way to install AccordionTableViewController. Run ```pod search AccordionTableViewController``` to search for the latest version. Then, copy and paste the ```pod``` line to your ```Podfile```. Your podfile should look like:
+[CocoaPods](http://cocoapods.org) is the easiest(iOS8+) way to install AccordionTableViewController. Run ```pod search AccordionTableViewController``` to search for the latest version. Then, copy and paste the ```pod``` line to your ```Podfile```. Your podfile should look like:
 
 ```
-platform :ios, '9.0'
+platform :ios, '8.0'
 pod 'AccordionTableViewController'
 ```
 
 Finally, install it by running ```pod install```.
 
-If you don't use CocoaPods, import the all files from "Classes" directory to your project.
+If you don't use CocoaPods, import the all files from "Classes" directory to your project(iOS7+).
 
 ## How to use it?
 
@@ -49,13 +46,13 @@ class ViewController: AccordionTableViewController {
 ```swift
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let viewOfSection = UIView(frame: CGRectMake(0, 0, view.frame.size.width, 300))
         viewOfSection.backgroundColor = UIColor.blueColor()
         let section = Section()
         section.view = viewOfSection
         section.title = "Section"
-        
+
         oneSectionAlwaysOpen = true
         sections =  [section] //how many sections you want
         delegate = self

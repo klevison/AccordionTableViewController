@@ -58,7 +58,7 @@ class ViewController: AccordionTableViewController {
         
         let button = UIButton(frame: CGRectMake(0, 0, self.view.frame.size.width, 50))
         button.setTitle("Reload only this section", forState: .Normal)
-        button.addTarget(self, action: "updateSectionOne", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(ViewController.updateSectionOne), forControlEvents: .TouchUpInside)
         viewOfSection.addSubview(button)
         
         return section
@@ -82,7 +82,7 @@ class ViewController: AccordionTableViewController {
         
         let button = UIButton(frame: CGRectMake(0, 0, self.view.frame.size.width, 50))
         button.setTitle("Reload sections one and two", forState: .Normal)
-        button.addTarget(self, action: "updateSectionsOneAndTwo", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(ViewController.updateSectionsOneAndTwo), forControlEvents: .TouchUpInside)
         viewOfSection.addSubview(button)
         
         return section
@@ -118,11 +118,11 @@ extension ViewController: SectionViewControllerDelegate {
 extension ViewController: AccordionTableViewControllerDelegate {
     
     func accordionTableViewControllerSectionDidClose(section: Section) {
-        print(__FUNCTION__)
+        print(#function)
     }
     
     func accordionTableViewControllerSectionDidOpen(section: Section) {
-        print(__FUNCTION__)
+        print(#function)
     }
 
 }

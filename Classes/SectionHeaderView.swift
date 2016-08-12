@@ -38,14 +38,14 @@ protocol SectionHeaderViewDelegate {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: "toggleOpen:")
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SectionHeaderView.toggleOpen(_:)))
         self.addGestureRecognizer(tapGesture)
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        overHeaderView.subviews.map { $0.removeFromSuperview() }
+        overHeaderView.subviews.forEach { $0.removeFromSuperview() }
     }
     
     func addOverHeaderSubView(view: UIView) {

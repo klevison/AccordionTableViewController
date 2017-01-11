@@ -3,18 +3,18 @@
 Swift version of https://github.com/klevison/KMAccordionTableViewController
 
 <p align="center">
-  <img align="center" src="juLug4JLzx.gif" alt="...">
+  <img align="center" src="demo.gif" alt="...">
 </p>
 
 ## Current Version
 
-Version: 0.0.2
+Version: 0.0.3
 
 ## Under the Hood
 
 * Supports UIViews as sections (UIViews, UIViewController's view, UITableViews, UIWebView, MKMapView, etc...)
 * Update content and size of a section
-* Custom animation
+* Custom animation, headers, sizes, etc...
 
 ## How to install it?
 

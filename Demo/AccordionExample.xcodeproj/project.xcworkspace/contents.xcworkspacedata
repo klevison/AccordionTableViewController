@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AccordionTableViewController.xcodeproj">
+      location = "self:AccordionExample.xcodeproj">
    </FileRef>
 </Workspace>

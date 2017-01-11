@@ -15,10 +15,12 @@ Version: 0.0.3
 * Supports UIViews as sections (UIViews, UIViewController's view, UITableViews, UIWebView, MKMapView, etc...)
 * Update content and size of a section
 * Custom animation, headers, sizes, etc...
+* Xcode 8 
+* Swift 3
 
 ## How to install it?
 
-[CocoaPods](http://cocoapods.org) is the easiest(iOS8+) way to install AccordionTableViewController. Run ```pod search AccordionTableViewController``` to search for the latest version. Then, copy and paste the ```pod``` line to your ```Podfile```. Your podfile should look like:
+[CocoaPods](http://cocoapods.org) is the easiest way to install AccordionTableViewController. Run ```pod search AccordionTableViewController``` to search for the latest version. Then, copy and paste the ```pod``` line to your ```Podfile```. Your podfile should look like:
 
 ```
 platform :ios, '8.0'
@@ -27,7 +29,7 @@ pod 'AccordionTableViewController'
 
 Finally, install it by running ```pod install```.
 
-If you don't use CocoaPods, import the all files from "Classes" directory to your project(iOS7+).
+If you don't use CocoaPods, import the all files from "Classes" directory to your project.
 
 ## How to use it?
 

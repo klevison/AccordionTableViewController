@@ -28,7 +28,7 @@ extension Section {
         section.overlayView = overlayViewSection
         
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
-        button.setTitle("Reload only this section", for: .normal)
+        button.setTitle("I can be any kind of UIView", for: .normal)
         viewOfSection.addSubview(button)
         
         return section
@@ -36,7 +36,7 @@ extension Section {
     
     static func sectionTwo(view: UIView) -> Section {
         let viewOfSection = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 300))
-        viewOfSection.backgroundColor = UIColor.blue
+        viewOfSection.backgroundColor = UIColor.red
         let section = Section()
         section.view = viewOfSection
         section.title = "Twitter"
@@ -51,7 +51,7 @@ extension Section {
         section.overlayView = overlayViewSection
         
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
-        button.setTitle("Reload sections one and two", for: .normal)
+        button.setTitle("I'm another UIView", for: .normal)
         viewOfSection.addSubview(button)
         
         return section
